@@ -1,0 +1,162 @@
+.navbar {
+    position: fixed;
+    background-color: var(--clr-navbg);
+    transition: 200ms ease;
+    z-index: 1;
+}
+
+.navbar:hover .navbar__text {
+    display: block;
+}
+
+.navbar__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar__item {
+    width: 100%;
+
+}
+
+.navbar__link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-slate400);
+    letter-spacing: -0.05em;
+    filter: grayscale(100%) opacity(0.7) hue-rotate(0deg);
+    transition: var(--transition-speed);
+}
+
+.navbar__link:hover {
+    filter: grayscale(0%) opacity(1) hue-rotate(0deg);
+    color: var(--clr-rose);
+    background: var(--clr-slate600);
+}
+
+.navbar__link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+.navbar__text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar__item:last-child {
+    margin-top: auto;
+}
+
+.navbar__logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--clr-rose);
+    background: var(--clr-navlogo);
+    font-size: var(--size-2xl);
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.navbar__logo svg {
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+
+.navbar:hover .navbar__logo svg {
+    transform: rotate(-180deg);
+}
+.fa-primary {
+    color: var(--clr-rose);
+}
+
+.fa-secondary {
+    color: var(--clr-darkRose);
+}
+
+.fa-primary, .fa-secondary {
+    transition: var(--transition-speed);
+}
+
+@media only screen and (max-width: 640px) {
+
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .navbar__logo {
+        display: none;
+    }
+
+    .navbar__nav {
+        flex-direction: row;
+    }
+
+    .navbar__link {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar__text {
+        display: none;
+    }
+
+    .navbar:hover .navbar__text {
+        display: none;
+    }
+
+    main {
+        margin: 0;
+    }
+
+}
+
+@media only screen and (min-width: 640px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar__nav {
+        flex-direction: column;
+    }
+
+
+    .navbar:hover {
+        width: 15rem;
+    }
+
+    .navbar:hover .navbar__text {
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+
+}
+
+.theme__icon {
+    display: none;
+}
+
+.dark #darkIcon {
+    display: block;
+}
+
+.light #lightIcon {
+    display: block;
+}
+

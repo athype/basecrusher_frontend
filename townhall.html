@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+<!--    <script src="node_modules/animejs/lib/anime.min.js"></script>-->
+    <script defer src="./src/utils/theme-toggle.js"></script>
+    <script defer src="./src/utils/bubble.js"></script>
+    <script defer src="./src/utils/th-fetch.js"></script>
+<!--    <script defer src="./src/utils/tiles.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="./styles/modernnormalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/FSNav.css">
+    <link rel="stylesheet" type="text/css" href="./styles/hero.css">
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css">
+<!--    <link rel="stylesheet" type="text/css" href="./styles/tiles.css">-->
+    <link rel="stylesheet" type="text/css" href="./styles/townhall.css">
+    <link rel="stylesheet" type="text/css" href="./styles/modal.css">
+    <link rel="stylesheet" type="text/css" href="./styles/video-embed.css">
+    <link rel="stylesheet" type="text/css" href="./styles/utils.css">
+
+
+    <title>IN DEV</title>
+</head>
+<body class="">
+<!--<div class="" id="tiles"></div>-->
+<nav class="navbar">
+    <ul class="navbar__nav">
+        <li class="navbar__logo">
+            <a href="index.html" class="navbar__link">
+                <span class="logo__text navbar__text">Base crusher</span>
+                <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fad"
+                        data-icon="angle-double-right"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+                >
+                    <g class="fa-group">
+                        <path
+                                fill="currentColor"
+                                d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                                class="fa-secondary"
+                        ></path>
+                        <path
+                                fill="currentColor"
+                                d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                                class="fa-primary"
+                        ></path>
+                    </g>
+                </svg>
+
+            </a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="index.html">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.1"
+                          d="M17.7218 8.08382L14.7218 5.29811C13.4309 4.09937 12.7854 3.5 12 3.5C11.2146 3.5 10.5691 4.09937 9.2782 5.29811L6.2782 8.08382C5.64836 8.66867 5.33345 8.96109 5.16672 9.34342C5 9.72575 5 10.1555 5 11.015V16.9999C5 18.8856 5 19.8284 5.58579 20.4142C6.17157 20.9999 7.11438 20.9999 9 20.9999H9.75V16.9999C9.75 15.7573 10.7574 14.7499 12 14.7499C13.2426 14.7499 14.25 15.7573 14.25 16.9999V20.9999H15C16.8856 20.9999 17.8284 20.9999 18.4142 20.4142C19 19.8284 19 18.8856 19 16.9999L19 11.015C19 10.1555 19 9.72575 18.8333 9.34342C18.6666 8.96109 18.3516 8.66866 17.7218 8.08382Z"
+                          fill="currentColor"
+                          class="fa-primary"/>
+                    <path d="M19 9L19 17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21L14 21L10 21L9 21C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17L5 9"
+                          stroke="currentColor"
+                          class="fa-secondary"
+                          stroke-width="2"
+                          stroke-linejoin="round"/>
+                    <path d="M3 11L7.5 7L10.6713 4.18109C11.429 3.50752 12.571 3.50752 13.3287 4.18109L16.5 7L21 11"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="fa-secondary"/>
+                    <path d="M10 21V17C10 15.8954 10.8954 15 12 15V15C13.1046 15 14 15.8954 14 17V21"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="fa-primary"/>
+                </svg>
+                <span class="navbar__text">Home</span>
+            </a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="townhalls.html">
+                <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 256 256" id="Flat"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.2">
+                        <path d="M82.14214,197.45584,52.201,227.397a8,8,0,0,1-11.31371,0L28.603,215.11268a8,8,0,0,1,0-11.31371l29.94113-29.94112a8,8,0,0,0,0-11.31371L37.65685,141.65685a8,8,0,0,1,0-11.3137l12.6863-12.6863a8,8,0,0,1,11.3137,0l76.6863,76.6863a8,8,0,0,1,0,11.3137l-12.6863,12.6863a8,8,0,0,1-11.3137,0L93.45584,197.45584A8,8,0,0,0,82.14214,197.45584Z"
+                              class="fa-secondary"
+                        />
+                    </g>
+                    <path d="M221.65723,34.34326A8.00246,8.00246,0,0,0,216,32h-.02539l-63.79883.20117A8.00073,8.00073,0,0,0,146.0332,35.106L75.637,120.32275,67.31348,111.999A16.02162,16.02162,0,0,0,44.68555,112L32.001,124.68555A15.99888,15.99888,0,0,0,32,147.31348l20.88672,20.88769L22.94531,198.14258a16.01777,16.01777,0,0,0,.001,22.62695l12.28418,12.28418a16.00007,16.00007,0,0,0,22.62793,0L87.79883,203.1123,108.68652,224.001A16.02251,16.02251,0,0,0,131.31445,224L143.999,211.31445A15.99888,15.99888,0,0,0,144,188.68652l-8.32324-8.32324,85.21679-70.39648a8.00125,8.00125,0,0,0,2.90528-6.14258L224,40.02539A8.001,8.001,0,0,0,221.65723,34.34326ZM120,212.68652,99.11328,191.79883a16,16,0,0,0-22.62793,0L46.544,221.74023,34.25977,209.45605l29.9414-29.9414a16.01866,16.01866,0,0,0,0-22.62695L43.31445,136,56,123.31348l14.50171,14.50195.00122.001,23.8374,23.83789.00244.00293.00244.00195L132.68555,200Zm87.81055-112.665-83.49829,68.97706L111.314,156l54.34327-54.34277a8.00053,8.00053,0,0,0-11.31446-11.31446L100,144.686,87.00195,131.6875,155.97852,48.189l51.99609-.16357Z"
+                          class="fa-primary"
+                    />
+                </svg>
+                <span class="navbar__text">Attacks</span>
+            </a>
+        </li>
+        <li class="navbar__item">
+            <a class="navbar__link" href="firequake.html">
+                <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.5"
+                          d="M12.8324 21.8013C15.9583 21.1747 20 18.926 20 13.1112C20 7.8196 16.1267 4.29593 13.3415 2.67685C12.7235 2.31757 12 2.79006 12 3.50492V5.3334C12 6.77526 11.3938 9.40711 9.70932 10.5018C8.84932 11.0607 7.92052 10.2242 7.816 9.20388L7.73017 8.36604C7.6304 7.39203 6.63841 6.80075 5.85996 7.3946C4.46147 8.46144 3 10.3296 3 13.1112C3 20.2223 8.28889 22.0001 10.9333 22.0001C11.0871 22.0001 11.2488 21.9955 11.4171 21.9858C11.863 21.9296 11.4171 22.085 12.8324 21.8013Z"
+                          fill="currentColor"
+                          class="fa-secondary"
+                    />
+                    <path d="M8 18.4442C8 21.064 10.1113 21.8742 11.4171 21.9858C11.863 21.9296 11.4171 22.085 12.8324 21.8013C13.871 21.4343 15 20.4922 15 18.4442C15 17.1465 14.1814 16.3459 13.5401 15.9711C13.3439 15.8564 13.1161 16.0008 13.0985 16.2273C13.0429 16.9454 12.3534 17.5174 11.8836 16.9714C11.4685 16.4889 11.2941 15.784 11.2941 15.3331V14.7439C11.2941 14.3887 10.9365 14.1533 10.631 14.3346C9.49507 15.0085 8 16.3949 8 18.4442Z"
+                          fill="currentColor"
+                          class="fa-primary"
+                    />
+                </svg>
+                <span class="navbar__text">Firequake</span>
+            </a>
+        </li>
+        <li class="navbar__item" id="themeButton">
+            <a class="navbar__link">
+                <svg
+                        class="theme__icon"
+                        id="lightIcon"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fad"
+                        data-icon="moon-stars"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                >
+                    <g class="fa-group">
+                        <path
+                                fill="currentColor"
+                                d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
+                                class="fa-secondary"
+                        ></path>
+                        <path
+                                fill="currentColor"
+                                d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
+                                class="fa-primary"
+                        ></path>
+                    </g>
+                </svg>
+                <svg
+                        class="theme__icon"
+                        id="darkIcon"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fad"
+                        data-icon="sunglasses"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"
+                >
+                    <g class="fa-group">
+                        <path
+                                fill="currentColor"
+                                d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
+                                class="fa-secondary"
+                        ></path>
+                        <path
+                                fill="currentColor"
+                                d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
+                                class="fa-primary"
+                        ></path>
+                    </g>
+                </svg>
+                <span class="navbar__text">Theme</span>
+            </a>
+
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <section class="hero container">
+        <h1 class="hero__subtitle">Townhall x</h1>
+        <p class="hero__text">Selected townhall x</p>
+    </section>
+
+    <section class="townhall container section">
+        <div class="townhall__header">
+            <a class="btn add-new" href="#">Add new</a>
+            <a class="btn" href="authors.html">Authors</a>
+            <div class="townhall__searchbar">
+                <label>
+                    <input type="text" placeholder="Search...">
+                </label>
+                <div class="search"></div>
+            </div>
+        </div>
+        <table class="townhall__table" id="townhallTable">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Guide link</th> <!-- New column header -->
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Dummy Data 1</td>
+                <td>Dummy Data 2</td>
+                <td><a class="btn" href="#">Guide</a></td> <!-- New column data -->
+                <td>
+                    <a class="btn" href="#">Edit</a>
+                    <a class="btn" href="#">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Dummy Data 3</td>
+                <td>Dummy Data 4</td>
+                <td><a class="btn" href="#">Guide</a></td> <!-- New column data -->
+                <td>
+                    <a class="btn" href="#">Edit</a>
+                    <a class="btn" href="#">Delete</a>
+                </td>
+            </tr>
+            <!-- More rows can be added as needed -->
+        </table>
+    </section>
+
+</main>
+<div class="" id="bubble-wrapper"></div>
+<footer id="footer">
+    <div id="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-section-title">General</h3>
+            <div class="footer-section-links">
+                <a href="index.html" target="_blank">Directory</a>
+                <a href="index.html/#about" target="_blank">About</a>
+                <a href="index.html/#contact" target="_blank">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-section-title">Social</h3>
+            <div class="footer-section-links">
+                <a href="" target="_blank">Twitter</a>
+                <a href="" target="_blank">Discord</a>
+                <a href="" target="_blank">YouTube</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3 class="footer-section-title">Legal</h3>
+            <div class="footer-section-links">
+                <a href="" target="_blank">Privacy</a>
+                <a href="" target="_blank">Terms</a>
+                <a href="" target="_blank">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="section container footer__section"></section>
+
+<div id="modal" class="modal">
+    <div class="modal__content">
+        <span class="close">&times;</span>
+        <h1 class="modal__title" id="modal__title"></h1>
+        <iframe class="embed" id="modal__embed" width="400px" height="300px" src="" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p class="modal__description" id="modal__description"></p>
+    </div>
+</div>
+
+<div id="modal__edit" class="modal">
+    <div class="modal__content">
+        <span class="close">&times;</span>
+        <h1 class="modal__title" id="modal__title__edit"></h1>
+        <form class="modal__form" id="modal__form__strategy">
+            <label for="modal__name">Name</label>
+            <input type="text" id="modal__name" class="modal__input__box" name="modal__name" required>
+            <label for="modal__shortdesc">Short description</label>
+            <input type="text" id="modal__shortdesc" class="modal__input__box" name="modal__shortdesc" required>
+            <label for="modal__type">Type</label>
+            <input type="text" id="modal__type" class="modal__input__box" name="modal__type" required>
+            <label for="modal__composition">Composition</label>
+            <input type="text" id="modal__composition" class="modal__input__box" name="modal__composition" required>
+            <label for="modal__ytlink">YouTube link</label>
+            <input type="text" id="modal__ytlink" class="modal__input__box" name="modal__ytlink" required>
+            <label for="modal__longdescription">Description</label>
+            <textarea id="modal__longdescription" class="modal__input__box" name="modal__description" required></textarea>
+            <label for="modal__th">Th ID</label>
+            <input type="number" id="modal__th" class="modal__input__box" name="modal__th" required>
+            <label for="modal__author">Author ID</label>
+            <input type="number" id="modal__author" class="modal__input__box" name="modal__author" required>
+            <button type="submit" class="btn" id="submitButton">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

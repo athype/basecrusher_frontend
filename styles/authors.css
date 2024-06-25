@@ -1,0 +1,54 @@
+.author__table {
+    width: 100%; /* Make the table take up the full width of its container */
+    border-collapse: separate; /* Collapse borders */
+    background-color: var(--clr-navbg);
+    border-radius: 6px;
+}
+
+
+.author__table th:first-child, .author__table td:first-child {
+    width: 80%; /* Adjust as needed */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 6px;
+}
+
+.author__table th:nth-child(3), .author__table td:nth-child(3) {
+    width: 10%; /* Set the width of the third column to 20% */
+}
+
+.author__table th:nth-child(3), .author__table td:nth-child(4) {
+    width: 15%; /* Set the width of the third column to 20% */
+}
+
+.author__table th, .author__table td {
+    /*border: 1px solid var(--clr-light); !* Add a border to table headers and cells *!*/
+    padding: 1rem; /* Add some padding */
+    border-radius: 6px;
+}
+
+.author__table th {
+    text-align: left; /* Align text to the left */
+    border-radius: 6px;
+}
+
+.author__table tr:nth-child(even) {
+    border-radius: 6px;
+
+}
+
+.author__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.author__searchbar {
+    width: 20rem;
+    max-width: 50rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--clr-light);
+    background-color: var(--clr-navbg);
+    color: var(--clr-light);
+}

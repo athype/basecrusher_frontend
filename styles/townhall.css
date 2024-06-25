@@ -1,0 +1,72 @@
+.townhall__table {
+  width: 100%; /* Make the table take up the full width of its container */
+  border-collapse: separate; /* Collapse borders */
+  background-color: var(--clr-navbg);
+  border-radius: 6px;
+}
+
+
+.townhall__table th:first-child, .townhall__table td:first-child {
+  width: 20%; /* Adjust as needed */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 6px;
+}
+
+.townhall__table th:nth-child(3), .townhall__table td:nth-child(3) {
+    width: 10%; /* Set the width of the third column to 20% */
+}
+
+.townhall__table th:nth-child(3), .townhall__table td:nth-child(4) {
+  width: 15%; /* Set the width of the third column to 20% */
+}
+
+.townhall__table th, .townhall__table td {
+  /*border: 1px solid var(--clr-light); !* Add a border to table headers and cells *!*/
+  padding: 1rem; /* Add some padding */
+  border-radius: 6px;
+}
+
+.townhall__table th {
+  text-align: left; /* Align text to the left */
+  border-radius: 6px;
+}
+
+.townhall__table tr:nth-child(even) {
+  border-radius: 6px;
+
+}
+
+.townhall__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.townhall__searchbar {
+    width: 20rem;
+    max-width: 50rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--clr-light);
+    background-color: var(--clr-navbg);
+    color: var(--clr-light);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

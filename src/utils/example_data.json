@@ -1,0 +1,74 @@
+[
+  {
+    "id": 4,
+    "name": "Th13",
+    "strategies": [
+      {
+        "id": 1,
+        "name": "PeWi",
+        "short_description": "Pekka walk",
+        "type": "Ground",
+        "super": true,
+        "composition": "Pekkas, healers, SBarbs, HH, SBW",
+        "description": "This is a super strategy for TH13",
+        "th_id": 4,
+        "author": {
+          "id": 1,
+          "name": "Windburn"
+        },
+        "createdAt": "2021-07-01T00:00:00Z"
+      },
+      {
+        "id": 2,
+        "name": "SWitch fireball",
+        "short_description": "Super witches",
+        "type": "Ground",
+        "super": false,
+        "composition": "Super witches, support troops",
+        "description": "This is a super strategy for TH13",
+        "th_id": 4,
+        "author": {
+          "id": 1,
+          "name": "Socko"
+        },
+        "createdAt": "2021-07-01T00:00:00Z"
+      },
+      {
+        "id": 3,
+        "name": "Yeti Smash",
+        "short_description": "Yetis",
+        "type": "Ground",
+        "super": true,
+        "composition": "Yetis, Swiz",
+        "description": "This is a super strategy for TH13",
+        "th_id": 4,
+        "author": {
+          "id": 1,
+          "name": "Unknown"
+        },
+        "createdAt": "2021-07-01T00:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Th14",
+    "strategies": [
+      {
+        "id": 1,
+        "name": "SAB smash",
+        "short_description": "Super archer barb",
+        "type": "Ground",
+        "super": true,
+        "composition": "Titans, Super archers, SBarbs, HH, SBW",
+        "description": "This is a super strategy for TH14",
+        "th_id": 5,
+        "author": {
+          "id": 1,
+          "name": "Windburn"
+        },
+        "createdAt": "2021-07-01T00:00:00Z"
+      }
+    ]
+  }
+]

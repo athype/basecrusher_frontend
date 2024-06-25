@@ -1,0 +1,151 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.embed {
+    display: flex;
+    justify-content: center;
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-dark);
+    left: 5rem;
+    margin: 15% auto;
+    padding: 20px;
+    width: 70%;
+    color: var(--clr-light);
+    border-radius: 1rem;
+    text-align: justify;
+}
+
+#modal__form__strategy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-dark);
+    left: 5rem;
+    margin: 15% auto;
+    padding: 20px;
+    width: 70%;
+    color: var(--clr-light);
+    border-radius: 1rem;
+    text-align: justify;
+}
+
+
+.modal__title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modal__description {
+    font-size: var(--size-sm);
+    color: var(--clr-slate600);
+    text-align: center;
+}
+
+.modal__input__box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: var(--clr-navbg);
+    color: var(--clr-light);
+}
+
+.close {
+    color: var(--clr-light);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+    color: var(--clr-rose); /* You can adjust this color to match your site's color scheme */
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition-speed);
+}
+
+.close:not(:hover) {
+    transition: var(--transition-speed);
+}
+
+.modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: var(--clr-rose);
+    outline: 1px solid var(--clr-rose);
+}
+
+/* xs */
+ @media (min-width: 475px) {
+     .modal__title {
+         font-size: var(--size-3xl);
+         color: var(--clr-light);
+     }
+
+     .modal__description {
+         font-size: var(--size-base);
+         color: var(--clr-slate600);
+     }
+ }
+
+/* sm */
+ @media (min-width: 640px) {
+     .modal {
+     }
+ }
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+ @media (min-width: 1024px) {
+     .modal__title {
+         font-size: var(--size-4xl);
+         color: var(--clr-light);
+     }
+
+     .modal__description {
+         font-size: var(--size-lg);
+         color: var(--clr-slate600);
+     }
+ }
+
+/* xl */
+ @media (min-width: 1280px) {
+     .modal__title {
+         font-size: var(--size-5xl);
+         color: var(--clr-light);
+     }
+
+     .modal__description {
+         font-size: var(--size-xl);
+         color: var(--clr-slate600);
+     }
+ }
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
